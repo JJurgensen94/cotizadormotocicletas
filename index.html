@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Coti-CASA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">    
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div id="cotizador">
+        <h1> 🏍Cotizador de Motocicletas🏍</h1>
+        <h2>Pulsa Cotizar para empezar 👍</h2>
+
+        <form onsubmit="event.preventDefault(); calcularPrecio();">
+            <div>
+                <h4>Cilindradas disponibles: </h4>
+                <ul>
+                    <li>125cc 🕛</li>
+                    <li>250cc 🕛</li>
+                    <li>500cc 🕛</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Marcas en Stock disponibles: </h4>
+                <ul>
+                    <li>honda 🏍️</li>
+                    <li>yamaha 🏍️</li>
+                    <li>suzuki 🏍️</li>
+                    <li>kawasaki 🏍️</li>
+                </ul>
+            </div>
+            <button type="submit">Cotizar</button>
+        </form>
+        <div id="resultado" class="oculto">
+        </div>
+    </div>
+    </main>
+    <footer>
+        <br>
+        <div class="creado">
+            <span><strong>Creado por Jorge Jurgensen</strong></span>
+        </div>
+        <div class="derechos">
+            <span><strong>&copy; Todos los derechos reservados</strong></span>
+        </div>
+    </footer>
+</body>
+</html>
